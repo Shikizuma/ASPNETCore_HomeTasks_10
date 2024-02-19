@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<form asp-controller="Home" asp-action="SendEmail" method="post">
+    <div>
+        <label for="To">To:</label>
+        <input type="email" id="To" name="To" required />
+    </div>
+    <div>
+        <label for="Subject">Subject:</label>
+        <input type="text" id="Subject" name="Subject" required />
+    </div>
+    <div>
+        <label for="Message">Message:</label>
+        <textarea id="Message" name="Message" required></textarea>
+    </div>
+    <div>
+        <button type="submit">Send Email</button>
+    </div>
+</form>
+
+@if (ViewBag.Message != null)
+{
+    <div>@ViewBag.Message</div>
+}
+
+@if (ViewBag.Error != null)
+{
+    <div style="color: red;">@ViewBag.Error</div>
+}

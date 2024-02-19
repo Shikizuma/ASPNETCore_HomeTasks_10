@@ -1,0 +1,37 @@
+﻿{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:39996",
+      "sslPort": 44309
+    }
+  },
+  "profiles": {
+    "Task4": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "https://localhost:7217;http://localhost:5125",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  },
+
+  "Seq": {
+    "ServerUrl": "http://localhost:5341",
+    "ApiKey": "1234567890",
+    "MinimumLevel": "Trace",
+    "LevelOverride": {
+      "Microsoft": "Warning"
+    }
+  }
+}
